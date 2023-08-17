@@ -245,3 +245,14 @@ exercises.c:144:23: error: assignment to expression with array type
       |                       ^
 Compilation failed
 4b2c101
+Thu 17 Aug 2023 02:34:10 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:181:29: error: ‘nodoActual’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+  181 |       nodoActual->siguiente =nuevoNodo;
+      |       ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6a3a5ce
