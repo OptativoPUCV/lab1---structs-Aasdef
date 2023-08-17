@@ -99,20 +99,22 @@ int checkSorted(int arr[], int size) {
   
   for (int i=0; i<size; i++){
     if (arr[i]>arr[i-1]){
-      ascend=0;//noesascendente
+      //noesascendente
+      break;
     }
-    if (arr[i]<arr[i-1]){
-      descend=0;//noesdescendente
+    else{
+      return 1;
     }
   }
-  if (ascend){
-    return 1;
-  }else if (descend){
-    return -1;
+  for(int i =0; i<size;i++){
+    if (arr[i]<arr[i+1]){
+      //noesdescendente
+      break;
+    }else{
+      return -1;
+    }
   }
-  else{
-    return 0;
-  }
+  return 0;
 }
 
 /*
