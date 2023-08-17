@@ -358,3 +358,14 @@ exercises.c:176:10: error: ‘primerNodo’ may be used uninitialized [-Werror=m
 cc1: all warnings being treated as errors
 Compilation failed
 4729cb4
+Thu 17 Aug 2023 04:44:58 AM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:176:10: error: ‘primerNodo’ may be used uninitialized [-Werror=maybe-uninitialized]
+  176 |   return primerNodo;
+      |          ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3d8872c
