@@ -66,26 +66,26 @@ arreglos en un tercer arreglo también ordenado.
 */
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[]) {
   int n= size1+size2;
-  int newArray[n];
   for(int i =0; i<size1 ;i++){
-    newArray[i]=arr1[i];
+    result[i]=arr1[i];
   }
 
   for (int i=size1; i<n; i++){
-    newArray[i]=arr2[i-size1];
+    result[i]=arr2[i-size1];
   }
 
   //ordenar vector 3
   int aux;
   for (int i =0; i<n; i++){
     for (int j=0; j<n-1; j++){
-      if (newArray[j]>newArray[j+1]){
-        aux=newArray[j];
-        newArray[j]=newArray[j+1];
-        newArray[j+1]=aux;
+      if (result[j]>result[j+1]){
+        aux=result[j];
+        result[j]=result[j+1];
+        result[j+1]=aux;
       }
     }
   }
+  
 }
 
 /*
