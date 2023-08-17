@@ -173,5 +173,5 @@ Nodo *crearListaEnlazada(int arr[], int size) {
     }
   }
   
-  return primerNodo; 
+  return NULL; 
 }
