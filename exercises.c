@@ -99,19 +99,19 @@ int checkSorted(int arr[], int size) {
   for (int i=0; i<size; i++){
     if (arr[i]>arr[i+1]){
       //noesascendente
-      break;
+      //ver sie s descendente
+      for (int j =0; j<size; j++){
+        if (arr[i]<arr[i+1]){
+          //noes descendente
+          return 0;//desordenado
+        }else{
+          return -1;
+        }
+        
+      }
     }
-    return 1;//esasecente
-  }
-  
-  for (int i=0;i<size ;i++){
-    if (arr[i]<arr[i+1]){
-      //noesdesc
-      break;
-    }
-    return -1;
-  }
-  return 0;
+  } 
+  return 1;  
 }
 
 /*
