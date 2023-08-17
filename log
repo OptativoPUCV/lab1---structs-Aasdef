@@ -235,3 +235,13 @@ exercises.c:144:23: error: assignment to expression with array type
 cc1: all warnings being treated as errors
 Compilation failed
 01e8bee
+Thu 17 Aug 2023 02:32:35 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:144:23: error: assignment to expression with array type
+  144 |   libro->autor.nombre = nombreAutor;
+      |                       ^
+Compilation failed
+4b2c101
