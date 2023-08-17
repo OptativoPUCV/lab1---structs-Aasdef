@@ -43,7 +43,7 @@ los números pares del arreglo original.
 int *filterEvenNumbers(int arr[], int size, int *newSize) { 
   int *newArray =(int*)malloc(size*sizeof(int));
   if (newArray == NULL ){
-    *newsize=0;
+    *newSize=0;
     return NULL;
   }
   int cont=0;
