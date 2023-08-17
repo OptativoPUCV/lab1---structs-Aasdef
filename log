@@ -285,3 +285,11 @@ exercises.c:187:10: error: ‘primerNodo’ may be used uninitialized [-Werror=m
 cc1: all warnings being treated as errors
 Compilation failed
 5a9465b
+Thu 17 Aug 2023 03:09:01 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Thu 17 Aug 2023 03:13:08 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|0
+78b5ebd

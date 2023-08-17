@@ -78,7 +78,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[
   //ordenar vector 3
   int aux;
   for (int i =0; i<n; i++){
-    for (int j=0; i<n-1; j++){
+    for (int j=0; j<n-1; j++){
       if (newArray[j]<newArray[j+1]){
         aux=newArray[j];
         newArray[j]=newArray[j+1];
@@ -184,4 +184,4 @@ Nodo *crearListaEnlazada(int arr[], int size) {
     }
   }
   
-  return primerNodo; }
+  return NULL; }
